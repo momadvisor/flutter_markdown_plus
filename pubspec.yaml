@@ -7,10 +7,12 @@ issue_tracker: https://github.com/foresightmobile/flutter_markdown_plus/issues
 version: 1.0.7
 
 environment:
-  sdk: ^3.4.0
-  flutter: ">=3.27.1"
+  sdk: ">=3.14.0 <4.0.0"
+  flutter: ">=3.51.0-0.1.pre"
 
 dependencies:
+  cupertino_ui: ^1.1.6
+  material_ui: ^1.11.0
   flutter:
     sdk: flutter
   markdown: ^7.3.0

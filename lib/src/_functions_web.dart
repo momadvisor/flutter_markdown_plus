@@ -4,9 +4,9 @@
 
 import 'dart:js_interop';
 
-import 'package:flutter/cupertino.dart' show CupertinoTheme;
-import 'package:flutter/material.dart' show Theme;
+import 'package:cupertino_ui/cupertino_ui.dart' show CupertinoTheme;
 import 'package:flutter/widgets.dart';
+import 'package:material_ui/material_ui.dart' show Theme;
 import 'package:path/path.dart' as p;
 
 import 'style_sheet.dart';
@@ -105,7 +105,7 @@ final MarkdownStyleSheet Function(BuildContext, MarkdownStyleSheetBaseTheme?)
   );
 };
 
-Widget _handleDataSchemeUri(Uri uri, final double? width, final double? height) {
+Widget _handleDataSchemeUri(Uri uri, double? width, double? height) {
   final String mimeType = uri.data!.mimeType;
   if (mimeType.startsWith('image/')) {
     return Image.memory(

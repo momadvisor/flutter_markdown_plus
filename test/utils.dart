@@ -7,10 +7,10 @@ import 'dart:io' as io;
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/gestures.dart';
-import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:material_ui/material_ui.dart';
 
 final TextTheme textTheme =
     Typography.material2018().black.merge(const TextTheme(bodyMedium: TextStyle(fontSize: 12.0)));
